@@ -16,7 +16,7 @@
           />
 
           <div class="invalid-feedback">
-            <span v-if="!$v.shopName.required">Shop Name is required</span>
+            <!-- <span v-if="!$v.shopName.required">Shop Name is required</span>
             <span v-if="!$v.shopName.minLength"
               >Shop name is too short, min
               {{ $v.shopName.$params.minLength.min }} characters</span
@@ -24,12 +24,12 @@
             <span v-if="!$v.shopName.maxLength"
               >Shop name is too long, max
               {{ $v.shopName.$params.maxLength.max }} characters</span
-            >
+            > -->
           </div>
         </div>
         <div>
           <label class="form-label">Item Name *</label>
-          <input
+          <!-- <input
             type="text"
             class="form-control"
             v-model.trim="$v.itemName.$model"
@@ -37,9 +37,9 @@
               'is-invalid': $v.itemName.$error,
               'is-valid': !$v.itemName.$invalid,
             }"
-          />
+          /> -->
 
-          <div class="invalid-feedback">
+          <!-- <div class="invalid-feedback">
             <span v-if="!$v.itemName.required">Item Name is required</span>
             <span v-if="!$v.itemName.minLength"
               >Item name is too short, min
@@ -49,7 +49,7 @@
               >Item name is too long, max
               {{ $v.itemName.$params.maxLength.max }} characters</span
             >
-          </div>
+          </div> -->
         </div>
         <div>
           <label class="form-label">Item Description *</label>
@@ -63,7 +63,7 @@
             }"
           />
 
-          <div class="invalid-feedback">
+          <!-- <div class="invalid-feedback">
             <span v-if="!$v.itemDesc.required">Item Name is required</span>
             <span v-if="!$v.itemDesc.minLength"
               >Item name is too short, min
@@ -73,7 +73,7 @@
               >Item name is too long, max
               {{ $v.itemDesc.$params.maxLength.max }} characters</span
             >
-          </div>
+          </div> -->
         </div>
         <div>
           <label class="form-label">Item Price</label>
